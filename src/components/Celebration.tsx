@@ -171,7 +171,7 @@ export const Celebration: React.FC<CelebrationProps> = ({ onOpenKeepsake }) => {
               <div className="absolute -inset-2 rounded-2xl border border-[#C9A24B]/40 pointer-events-none" />
               <div className="relative rounded-xl overflow-hidden shadow-2xl border border-[#C9A24B] bg-[#3B0A18]">
                 <img
-                  src="/images/celebration.webp"
+                  src="/images/hero.webp"
                   alt="Life Celebrated, Eziokwubundu I"
                   className="w-full h-auto object-cover max-h-[580px] group-hover:scale-102 transition-transform duration-700"
                   loading="lazy"

@@ -78,7 +78,7 @@ export const Togetherness: React.FC = () => {
 
               <div className="group relative rounded-xl overflow-hidden border border-[#C9A24B]/40 shadow-lg bg-[#4A0E1F] aspect-square">
                 <img
-                  src="/images/hope.webp"
+                  src="/images/grace.webp"
                   alt="Family smile during restoration"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
