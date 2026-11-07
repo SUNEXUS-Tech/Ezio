@@ -4,19 +4,19 @@
  */
 
 import React, { useState } from 'react';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { TheMan } from './components/TheMan';
-import { TheJourney } from './components/TheJourney';
-import { TheGrace } from './components/TheGrace';
-import { TheLegacy } from './components/TheLegacy';
-import { Togetherness } from './components/Togetherness';
-import { Thanksgiving } from './components/Thanksgiving';
-import { Celebration } from './components/Celebration';
-import { Gallery } from './components/Gallery';
-import { TributesGuestbook } from './components/TributesGuestbook';
-import { Footer } from './components/Footer';
-import { KeepsakeModal } from './components/KeepsakeModal';
+import { Navbar } from '../components/Navbar';
+import { Hero } from '../components/Hero';
+import { TheMan } from '../components/TheMan';
+import { TheJourney } from '../components/TheJourney';
+import { TheGrace } from '../components/TheGrace';
+import { TheLegacy } from '../components/TheLegacy';
+import { Togetherness } from '../components/Togetherness';
+import { Thanksgiving } from '../components/Thanksgiving';
+import { Celebration } from '../components/Celebration';
+import { Gallery } from '../components/Gallery';
+import { TributesGuestbook } from '../components/TributesGuestbook';
+import { Footer } from '../components/Footer';
+import { KeepsakeModal } from '../components/KeepsakeModal';
 
 export default function App() {
   const [isKeepsakeOpen, setIsKeepsakeOpen] = useState(false);
