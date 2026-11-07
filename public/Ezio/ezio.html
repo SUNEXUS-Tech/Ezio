@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Triumph of Eziokwubundu I</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#4A0E1F;--gold:#C9A24B;--ivory:#FAF6EC;--champ:#EFE4C8;--ink:#2B2B2B;--bg:var(--ivory);--text:var(--ink);--serif:'Poppins',system-ui,sans-serif;--sans:-apple-system,BlinkMacSystemFont,'SF UI Display','SF Pro Display','Helvetica Neue',Inter,system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:var(--ivory);--text:var(--ink)}}
+html{scroll-behavior:smooth;scroll-padding-top:calc(60px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.75 var(--sans)}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.25;margin:0 0 .6em}
+b,strong{font-family:var(--serif);font-weight:600}
+section{padding:84px 22px}
+.wrap{max-width:1000px;margin:auto}
+.eyebrow{color:var(--gold);letter-spacing:.2em;font-size:.78rem;text-transform:uppercase;font-weight:500;margin-bottom:14px}
+h2{font-size:clamp(1.6rem,5.2vw,2.6rem)}
+.quote{font-family:var(--serif);font-size:clamp(1.05rem,3.4vw,1.45rem);font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:var(--gold);border-top:1px solid var(--gold);padding-top:20px;margin-top:32px}
+.dark{background:var(--navy);color:var(--ivory)}
+.alt{background:var(--champ)}
+.muted{background:#3B0A18;color:#e6e1d4}
+.split{display:grid;gap:34px;align-items:center}
+@media(min-width:820px){.split{grid-template-columns:1fr 1fr}.split.rev .img{order:2}}
+.img{aspect-ratio:4/5;border-radius:6px;overflow:hidden;border:1px solid var(--gold);background:linear-gradient(135deg,#7A1D36,#4A0E1F);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:.8rem;letter-spacing:.15em;text-align:center;padding:12px}
+.img.wide{aspect-ratio:16/9}
+.img img{width:100%;height:100%;object-fit:cover}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:20;padding:calc(12px + env(safe-area-inset-top,0px)) 20px 12px;display:flex;justify-content:space-between;align-items:center;background:rgba(74,14,31,.94);backdrop-filter:blur(8px)}
+nav b{font-family:var(--serif);color:var(--gold);font-size:1.1rem;letter-spacing:.06em}
+nav .links{display:none;gap:20px}
+nav a{color:var(--ivory);text-decoration:none;font-size:.85rem}
+#menuBtn,#musicBtn{background:none;border:1px solid var(--gold);color:var(--gold);border-radius:20px;padding:6px 14px;font:inherit;font-size:.8rem;cursor:pointer}
+.drawer{display:none;position:fixed;inset:0;background:var(--navy);z-index:19;flex-direction:column;justify-content:center;align-items:center;gap:22px}
+.drawer.open{display:flex}.drawer a{font-family:var(--serif);font-size:1.8rem;color:var(--ivory);text-decoration:none}
+@media(min-width:820px){nav .links{display:flex}#menuBtn{display:none}}
+/* hero */
+#hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;background:linear-gradient(rgba(74,14,31,.7),rgba(74,14,31,.92)),url('images/hero.webp') center/cover,var(--navy);color:var(--ivory)}
+#hero h1{font-size:clamp(1.8rem,7.2vw,4.2rem);letter-spacing:.02em;color:var(--ivory)}
+#hero .sub{font-family:var(--sans);font-size:1.1rem;color:var(--gold)}
+.honour{margin-top:34px;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase}
+.name{font-family:var(--serif);font-weight:600;font-size:clamp(1.3rem,4.6vw,2rem);color:var(--gold);margin:6px 0}
+.date{margin-top:26px;border:1px solid var(--gold);display:inline-block;padding:8px 22px;letter-spacing:.12em}
+.cue{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);color:var(--gold);font-size:.75rem;letter-spacing:.25em;animation:bob 2.2s infinite}
+@keyframes bob{50%{transform:translate(-50%,8px)}}
+/* cards */
+.cards{display:grid;gap:14px;margin:26px 0}
+@media(min-width:700px){.cards{grid-template-columns:repeat(2,1fr)}}
+.card{background:#fff;border-left:4px solid var(--gold);padding:18px 22px;border-radius:4px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.center{text-align:center;max-width:720px;margin:auto}
+/* strip & gallery */
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:30px}
+.strip .img{aspect-ratio:1}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin:24px 0}
+.tabs button{flex:none;border:1px solid var(--gold);background:none;color:var(--ivory);padding:8px 16px;border-radius:20px;font:inherit;font-size:.85rem;cursor:pointer}
+.tabs button.on{background:var(--gold);color:var(--navy)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:700px){.grid{grid-template-columns:repeat(3,1fr)}}
+.grid .img{aspect-ratio:1;cursor:zoom-in}
+#lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:30;align-items:center;justify-content:center;color:#fff}
+#lb.open{display:flex}#lb img{max-height:86vh;max-width:94vw;object-fit:contain}
+#lb button{position:absolute;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer;padding:14px}
+.x{top:calc(8px + env(safe-area-inset-top,0px));right:8px}.pv{left:4px}.nx{right:4px}
+footer{background:var(--navy);color:var(--ivory);text-align:center;padding:60px 22px calc(40px + env(safe-area-inset-bottom,0px))}
+footer small{color:var(--gold);letter-spacing:.15em}
+.rv{opacity:0;transform:translateY(24px);transition:.9s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.cue{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav>
+  <b>Eziokwubundu I</b>
+  <div class="links"><a href="#man">The Man</a><a href="#journey">Journey</a><a href="#grace">Grace</a><a href="#legacy">Legacy</a><a href="#thanks">Thanksgiving</a><a href="#gallery">Gallery</a></div>
+  <div><button id="musicBtn" hidden aria-pressed="false">♪ Music</button> <button id="menuBtn" aria-label="Menu">Menu</button></div>
+</nav>
+<div class="drawer" id="drawer"><a href="#man">The Man</a><a href="#journey">The Journey</a><a href="#grace">Restoration</a><a href="#legacy">Legacy</a><a href="#together">Togetherness</a><a href="#thanks">Thanksgiving</a><a href="#gallery">Gallery</a></div>
+
+<section id="hero">
+  <div class="rv">
+    <h1>THE TRIUMPH OF<br>EZIOKWUBUNDU I</h1>
+    <p class="sub">A life of integrity. A journey of grace. A testimony of gratitude.</p>
+    <p class="honour">In honour of</p>
+    <p class="name">JUDE IFEANYI ANWUKAH</p>
+    <p class="honour" style="margin-top:0">Eziokwubundu I</p>
+    <p class="quote" style="border:0;margin:26px 0 0">To God be the glory.</p>
+    <p class="date">SATURDAY · NOVEMBER 14, 2026</p>
+  </div>
+  <div class="cue">SCROLL</div>
+</section>
+
+<section id="man">
+  <div class="wrap split">
+    <div class="img rv"><img src="images/man.webp" alt="Jude Ifeanyi Anwukah" loading="lazy" onerror="this.remove()">PHOTO · THE MAN</div>
+    <div class="rv">
+      <div class="eyebrow">Beyond the title</div>
+      <h2>A man of his word. A heart that gives.</h2>
+      <p>Jude Ifeanyi Anwukah is fondly called Eziokwubundu by friends and family, a name that reflects the honesty, integrity and conviction that define his character.</p>
+      <p>A man who stands by the truth, he is deeply loved and respected by many for his generosity, kindness and willingness to make a difference in the lives of others.</p>
+      <p>His impact extends beyond his immediate family. Through his generosity and commitment to investing in young people, particularly within his extended family and community, he has helped nurture hope, opportunity and a sense of belonging.</p>
+      <p>To those who know him, he is more than a name or a title. He is family, a source of encouragement and a man whose life has touched many.</p>
+      <div class="quote">A good name is a legacy. A generous heart is a blessing.</div>
+    </div>
+  </div>
+</section>
+
+<section id="journey" class="muted">
+  <div class="wrap center rv">
+    <div class="img wide" style="margin-bottom:34px"><img src="images/journey.webp" alt="A season of hope" loading="lazy" onerror="this.remove()">PHOTO · A DIFFICULT CHAPTER</div>
+    <div class="eyebrow">The journey</div>
+    <h2>A moment that changed everything.</h2>
+    <p>There are seasons in life that test the strength of the body, the courage of the heart and the depth of one's faith.</p>
+    <p>Jude faced a devastating illness that brought him frighteningly close to the end of life.</p>
+    <p>It was a difficult chapter, one that reminded his family and loved ones how fragile life can be and how precious every moment truly is.</p>
+    <p>Yet, in the face of uncertainty, hope remained.</p>
+    <p>The story did not end where the struggle began.</p>
+    <p style="color:var(--gold);font-family:var(--serif);font-size:1.5rem">The Lord had another chapter to write.</p>
+    <p><em>This is a family testimony of a difficult season and the grace that carried him through it.</em></p>
+  </div>
+</section>
+
+<section id="grace" class="alt">
+  <div class="wrap split rev">
+    <div class="img rv"><img src="images/grace.webp" alt="Hope and healing" loading="lazy" onerror="this.remove()">PHOTO · HOPE AND HEALING</div>
+    <div class="rv">
+      <div class="eyebrow">The grace of God</div>
+      <h2>When hope found a reason to celebrate.</h2>
+      <p>What once seemed like an overwhelming chapter has become a reason for thanksgiving.</p>
+      <p>His journey through illness and recovery is a reminder to his family and loved ones of God's mercy, the power of prayer and the preciousness of life.</p>
+      <p>Today, we do not gather simply to remember a difficult experience. We gather to celebrate the gift of life, the joy of being together and the opportunity to give thanks.</p>
+      <div class="quote">What a difference a day can make. What a testimony grace can write.</div>
+    </div>
+  </div>
+</section>
+
+<section id="legacy">
+  <div class="wrap rv">
+    <div class="center">
+      <div class="eyebrow">The legacy</div>
+      <h2>His generosity is part of his story.</h2>
+      <p>A person's impact is not measured only by what they achieve, but also by the lives they influence.</p>
+      <p>Jude's generosity and investment in young people, especially within his extended family and community, form an important part of the story being celebrated.</p>
+      <p>His willingness to support others speaks to a life that values people, opportunity and the future of the next generation.</p>
+      <p>The love surrounding him today is reflected in the people who have been touched by his kindness.</p>
+    </div>
+    <div class="strip">
+      <div class="img"><img src="images/legacy1.webp" alt="" loading="lazy" onerror="this.remove()">PHOTO</div>
+      <div class="img"><img src="images/legacy2.webp" alt="" loading="lazy" onerror="this.remove()">PHOTO</div>
+      <div class="img"><img src="images/legacy3.webp" alt="" loading="lazy" onerror="this.remove()">PHOTO</div>
+    </div>
+    <div class="quote center">The greatest legacy is the good we leave in other lives.</div>
+  </div>
+</section>
+
+<section id="together" class="alt">
+  <div class="wrap split">
+    <div class="rv">
+      <div class="eyebrow">Life, family and togetherness</div>
+      <h2>The beauty of being here.</h2>
+      <p>Beyond the difficult moments are the memories that make life beautiful.</p>
+      <p>The family moments, friendships, celebrations, shared experiences and everyday joys all form part of a life worth celebrating.</p>
+      <p>These photographs preserve moments of togetherness and remind us that every day is a gift.</p>
+      <p>Today, we celebrate not only survival, but the privilege of sharing life with the people we love.</p>
+    </div>
+    <div class="strip rv" style="grid-template-columns:1fr 1fr;margin:0">
+      <div class="img"><img src="images/family1.webp" alt="" loading="lazy" onerror="this.remove()">PHOTO</div>
+      <div class="img"><img src="images/family2.webp" alt="" loading="lazy" onerror="this.remove()">PHOTO</div>
+      <div class="img"><img src="images/family3.webp" alt="" loading="lazy" onerror="this.remove()">PHOTO</div>
+      <div class="img"><img src="images/family4.webp" alt="" loading="lazy" onerror="this.remove()">PHOTO</div>
+    </div>
+  </div>
+</section>
+
+<section id="thanks">
+  <div class="wrap rv">
+    <div class="center">
+      <div class="eyebrow">The thanksgiving · All glory belongs to God</div>
+      <h2>A heart full of gratitude.</h2>
+      <p>There are moments when words are not enough to express what the heart feels.</p>
+      <p>For Jude, his family and everyone whose life has intersected with his, this is such a moment.</p>
+      <p><b>We give thanks for:</b></p>
+    </div>
+    <div class="cards">
+      <div class="card">The gift of life.</div>
+      <div class="card">The strength to endure difficult seasons.</div>
+      <div class="card">The grace that carried him through illness.</div>
+      <div class="card">The family, friends and loved ones who stood together.</div>
+      <div class="card">The opportunity to witness another chapter of life.</div>
+    </div>
+    <div class="center"><p>Today, we celebrate with grateful hearts, acknowledging that every good gift comes from God.</p>
+    <div class="quote">To God be the glory — now and always.</div></div>
+  </div>
+</section>
+
+<section id="celebration" class="dark">
+  <div class="wrap split">
+    <div class="rv">
+      <div class="eyebrow">The celebration</div>
+      <h2>Celebrating life. Giving thanks. Sharing joy.</h2>
+      <p>A special thanksgiving celebration in honour of Jude Ifeanyi Anwukah — Eziokwubundu I.</p>
+      <p class="date">SATURDAY · NOVEMBER 14, 2026</p>
+      <p style="margin-top:22px">An evening dedicated to gratitude, reflection, celebration and the glory of God.</p>
+      <div class="quote">The Triumph of Eziokwubundu I<br><span style="font-size:.9rem;letter-spacing:.08em;text-transform:none;font-family:var(--sans);font-weight:400;color:var(--ivory)">A journey remembered. A life celebrated. A testimony preserved.</span></div>
+    </div>
+    <div class="img rv"><img src="images/celebration.webp" alt="" loading="lazy" onerror="this.remove()">PHOTO · LIFE CELEBRATED</div>
+  </div>
+</section>
+
+<section id="gallery" class="muted">
+  <div class="wrap">
+    <div class="eyebrow">Photo gallery</div>
+    <h2>A life told through photographs.</h2>
+    <p>Every photograph preserves a moment. Together, these memories tell a story of character, family, difficult seasons, hope, restoration and celebration.</p>
+    <p>Explore selected moments from the life and journey of Eziokwubundu I.</p>
+    <div class="tabs" id="tabs"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="eyebrow">A life celebrated. A testimony preserved.</div>
+  <p style="max-width:560px;margin:0 auto 20px">May this story remain a reminder that life is precious, faith is powerful and gratitude is always worthwhile.</p>
+  <p style="font-family:var(--serif);font-size:1.3rem;line-height:1.7">Today, we celebrate a man.<br>Today, we honour a journey.<br>Today, we give all glory to God.</p>
+  <h2 style="color:var(--gold);margin-top:34px">THE TRIUMPH OF EZIOKWUBUNDU I</h2>
+  <p class="name">Jude Ifeanyi Anwukah</p>
+  <p style="letter-spacing:.2em">TO GOD BE THE GLORY.</p>
+  <p style="margin-top:40px"><small>Website experience created by SUNEXUS.</small></p>
+</footer>
+
+<div id="lb"><button class="x" aria-label="Close">×</button><button class="pv" aria-label="Previous">‹</button><img alt=""><button class="nx" aria-label="Next">›</button></div>
+<audio id="bgm" loop preload="none"><!-- Add later: <source src="audio/theme.mp3" type="audio/mpeg"> --></audio>
+
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)};
+// menu
+var dr=$('#drawer');
+$('#menuBtn').onclick=function(){dr.classList.toggle('open')};
+dr.onclick=function(){dr.classList.remove('open')};
+// reveal
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+// music: shows only once a source is added; plays only on tap
+var a=$('#bgm'),mb=$('#musicBtn');
+if(a.querySelector('source')||a.getAttribute('src')){mb.hidden=false}
+mb.onclick=function(){if(a.paused){a.play().catch(function(){});mb.setAttribute('aria-pressed','true');mb.textContent='❚❚ Music'}else{a.pause();mb.setAttribute('aria-pressed','false');mb.textContent='♪ Music'}};
+// gallery: edit file names/captions here
+var cats={'The Man Behind the Name':6,'A Difficult Chapter':3,'Hope and Healing':6,'Family and Togetherness':9,'Life Celebrated':6};
+var slug=function(s){return s.toLowerCase().replace(/[^a-z]+/g,'-').replace(/^-|-$/g,'')};
+var tabs=$('#tabs'),grid=$('#grid'),cur=[],idx=0;
+function show(name){
+  tabs.querySelectorAll('button').forEach(function(b){b.classList.toggle('on',b.textContent===name)});
+  grid.innerHTML='';cur=[];
+  for(var i=1;i<=cats[name];i++){
+    var src='images/gallery/'+slug(name)+'-'+i+'.webp';cur.push(src);
+    var d=document.createElement('div');d.className='img';d.dataset.i=i-1;
+    d.innerHTML='<img src="'+src+'" alt="'+name+' photo '+i+'" loading="lazy" onerror="this.remove()">'+name.split(' ')[0].toUpperCase()+' '+i;
+    grid.appendChild(d);
+  }
+}
+Object.keys(cats).forEach(function(n,i){var b=document.createElement('button');b.textContent=n;b.onclick=function(){show(n)};tabs.appendChild(b)});
+show(Object.keys(cats)[0]);
+// lightbox
+var lb=$('#lb'),li=lb.querySelector('img');
+function open(i){idx=(i+cur.length)%cur.length;li.src=cur[idx];lb.classList.add('open')}
+grid.onclick=function(e){var t=e.target.closest('.img');if(t&&t.querySelector('img'))open(+t.dataset.i)};
+lb.querySelector('.x').onclick=function(){lb.classList.remove('open')};
+lb.querySelector('.pv').onclick=function(){open(idx-1)};
+lb.querySelector('.nx').onclick=function(){open(idx+1)};
+var sx=0;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){var d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)open(idx+(d<0?1:-1))});
+document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowRight')open(idx+1);if(e.key==='ArrowLeft')open(idx-1)});
+})();
+</script>
+</body>
+</html>
