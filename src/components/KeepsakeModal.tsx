@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { X, Printer, Download, Sparkles, CheckCircle2, Clock, Calendar } from 'lucide-react';
 import { EVENT_DETAILS, THANKSGIVING_PILLARS } from '../data/content';
-import { downloadKeepsakePdf } from '../utils/generateKeepsakePdf';
+import { downloadKeepsakePdf } from '../lib/generateKeepsakePdf';
 
 interface KeepsakeModalProps {
   isOpen: boolean;

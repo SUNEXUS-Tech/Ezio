@@ -126,7 +126,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     imageSrc: '/images/celebration.webp',
     caption: 'Giving thanks for the gift of life, the fellowship of family, and another glorious chapter written by God.',
     dateOrEra: 'Saturday, Nov 14, 2026',
-  },,
+  },
   {
     id: 'g-celebration-01',
     title: 'A Moment of Thanksgiving 01',

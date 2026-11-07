@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Play, Pause, Volume2, VolumeX, Menu, X, BookOpen, Sparkles } from 'lucide-react';
-import { hymnAudio } from '../utils/audioSynth';
+import { hymnAudio } from '../lib/audioSynth';
 
 interface NavbarProps {
   onOpenKeepsake: () => void;
